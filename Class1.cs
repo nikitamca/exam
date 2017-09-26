@@ -25,5 +25,29 @@ namespace OMS.Models
         public string cpassword { get; set; }
         [Required(ErrorMessage="Contact number not be blank.")]
         public int mono { get; set; }
+        [Required]
+        public DateTime dob { get; set; }
+        public int salary { get; set; }
+    }
+    public class Class2
+    {
+        [Key]
+        public int eid { get; set; }
+
+        [Required(ErrorMessage = "Name not be blank.")]
+        public string ename { get; set; }
+        [Required(ErrorMessage = "Address not be blank.")]
+        public string address { get; set; }
+        [Required(ErrorMessage = "Email not be blank.")]
+        public string email { get; set; }
+        [Required(ErrorMessage = "Password not be blank.")]
+        public string password { get; set; }
+        [Required(ErrorMessage = "Confirm password not be blank.")]
+        public string cpassword { get; set; }
+        [Required(ErrorMessage = "Contact number not be blank.")]
+        public int mono { get; set; }
+        [Required]
+        public DateTime dob { get; set; }
+        public int salary { get; set; }
     }
 }
